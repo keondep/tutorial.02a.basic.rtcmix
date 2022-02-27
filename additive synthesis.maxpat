@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1015.0, 150.0, 638.0, 252.0 ],
+		"rect" : [ 738.0, 209.0, 638.0, 414.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,66 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 53.0, 55.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 101.0, 32.0, 22.0 ],
-					"text" : "gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 231.0, 94.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 261.0, 59.0, 83.0, 22.0 ],
-					"text" : "loadmess 300"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 237.5, 141.0, 83.0, 22.0 ],
-					"text" : "prepend var 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-24",
 					"maxclass" : "comment",
@@ -126,6 +66,47 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 68.5, 55.0, 199.0, 20.0 ],
+					"text" : "<= bang to hear your beautiful note!",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-22",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 335.5, 82.571428571428555, 287.0, 48.0 ],
+					"text" : "We're making a \"plucked\" note that sounds kinda like a guitar string, using the STRUM2 instrument. Its syntax can be found here:",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-21",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 335.5, 190.071428571428555, 287.5, 62.0 ],
+					"text" : "\"The Karplus-Strong plucked string algorithm is a subtractive synthesis system featuring a burst of white noise, a recirculating delay line, a lowpass filter, an allpass filter, and a snazzy recursion\"",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"linecount" : 3,
 					"maxclass" : "message",
@@ -139,6 +120,20 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-17",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 197.5, 89.571428571428569, 156.0, 48.0 ],
+					"text" : "<= Lock patch (cmd. + E), double-click the rtcmix~ object to open & see script.",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 3,
 					"fontsize" : 20.0,
 					"id" : "obj-13",
@@ -147,6 +142,20 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.5, 9.0, 605.0, 29.0 ],
 					"text" : "1. \"Hello World!\" — A Single Note with the STRUM2 Instrument"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-11",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 174.5, 157.5, 156.0, 75.0 ],
+					"text" : "Unlock patch (cmd. + E), then option-click on the rtcmix~ object for documentation (i.e. to see its .maxhelp file).",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
 				}
 
 			}
@@ -219,7 +228,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 169.5, 71.0, 24.0, 24.0 ]
+					"patching_rect" : [ 42.5, 55.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -242,8 +251,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 42.5, 159.571428571428555, 123.0, 41.0 ],
-					"save" : [ "#N", "rtcmix~", 2, 0, ";", "#X", "restore", 0, 357, 357, "// STRUM2 Instrument Syntax:\r\n// STRUM2(outsk, dur, AMP, PITCH, squish, decay_time[, PAN])\n// source: http://rtcmix.org/reference/instruments/STRUM2.php\r\n\r\nstarttime = 0\r\nlowedge = $1\r\n\r\nfor (i = 0; i < 15; i = i+1){\r\ndillon = irand(lowedge, 500)\r\nSTRUM2(starttime, 3.5, 10000, dillon, 2, 3.5, random())\r\nstarttime = starttime + 0.1\r\n}\r\n\r\nMAXBANG(starttime)", ";" ],
+					"patching_rect" : [ 42.5, 114.5, 123.0, 41.0 ],
+					"save" : [ "#N", "rtcmix~", 2, 0, ";", "#X", "restore", 0, 573, 573, "// STRUM2 Instrument Syntax:\r\n// STRUM2(outsk, dur, AMP, PITCH, squish, decay_time[, PAN])\n// source: http://rtcmix.org/reference/instruments/STRUM2.php\r\n\r\nkeon = maketable(\"wave\",1000 ,\"saw\")\r\n // define a triangular amplitude envelope \r\nampenv = maketable(\"line\",1000,0,0, 50,1, 100,0)\r\n\r\nWAVETABLE(0, 4.3, 20000*ampenv, 8.02, 0.5, keon)\r\n\r\nWAVETABLE(0, 7, 10000*ampenv, 50, 0.5, keon)\r\n\r\nWAVETABLE(0, 7, 10000*ampenv, 50+irand(0.1, 3), 0.5, keon)\r\n\r\nWAVETABLE(0, 7, 10000*ampenv, 50+irand(0.1, 3), 0.5, keon)\r\n\r\nWAVETABLE(0, 7, 10000*ampenv, 50+irand(0.1, 3), 0.5, keon)", ";" ],
 					"text" : "rtcmix~ 2"
 				}
 
@@ -265,64 +274,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-10", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-15", 0 ]
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
 					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-7", 0 ]
 				}
 
 			}
